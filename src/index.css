@@ -1,5 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+  padding: 0;
+  min-width: 320px;
+  height: 100%;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +26,113 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.align-center{
+  max-width: 400px;
+  display: flex;
+  height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.align-centerDiv{
+  max-width: 400px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.auth-card{
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+input{
+  width: 100%;
+  display: block;
+  margin: 25px 0;
+  padding: 10px;
+  border: 1px solid #0084FF;
+  border-radius: 8px;
+}
+
+input[type="submit"]{
+  cursor: pointer;
+  background-color: #0084FF;
+  color: white;
+  transition: all .4s ease;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover{
+  background-color: white;
+  color: #0084FF;
+}
+
+header{
+  background-color: #0084FF;
+  width: 100%;
+}
+
+
+.navigation{
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link{
+  list-style-type: none;  
+}
+
+.nav-link2{
+  list-style-type: none; 
+  margin: 10px;
+  color: white;
+}
+
+.nav-a{
+  text-decoration: none;
+  display: block;
+  font-size: 0.8rem;
+  padding: 20px;
+  color: white;
+}
+
+.flex-left{
+  display: flex;
+}
+
+.flex-right{
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+h1{
+  text-align: center;
+}
+
+@media (max-width: 600px){
+  .navigation{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .flex-left{
+    flex-direction: column;
+  }
+  
+  .flex-right{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid white;
+    font-size: 0.7em;
+  }
 }
